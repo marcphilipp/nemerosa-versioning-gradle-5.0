@@ -1,0 +1,10 @@
+plugins {
+    id "net.nemerosa.versioning" version "2.7.1"
+    id "org.ajoberstar.git-publish" version "2.0.0-rc.2"
+}
+
+task printCommit {
+    doLast {
+        println versioning.info.commit
+    }
+}
